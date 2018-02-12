@@ -196,9 +196,7 @@ print 'One Hot Encoding Successful'
 print '-----------------------------'
 
 frequent_SKUs = apriori(oht_df, min_support=0.0004, use_colnames=True)
-print 'Frequent SKUs'
-
-
+print 'Frequent SKUs Successful'
 print '----------------------------------------------------------'
 
 assoc_rules = association_rules(frequent_SKUs, metric="confidence", min_threshold=0.5)
