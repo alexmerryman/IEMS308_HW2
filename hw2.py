@@ -115,6 +115,12 @@ print '# unique SKUs:', len(unique_SKUs)
 
 # unique SKU value counts
 unique_SKU_counts = trnsact_df.sku.value_counts()
+print '-----'
+print '10 most sold SKUs:'
+print 'SKU', '\t  ', 'Count'
+print unique_SKU_counts[0:9]
+print '-----'
+
 
 # STORE STATS
 # number of unique stores
